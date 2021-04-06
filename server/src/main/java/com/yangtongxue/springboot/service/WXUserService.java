@@ -10,6 +10,6 @@ public interface WXUserService extends IService<WXUser> {
     void saveWXUser(WXUser wxuser);
 
     /*调用mapper的Select openID方法*/
-    boolean selectOpenId(String openid);
+    int selectOpenId(String openid);
 
 }

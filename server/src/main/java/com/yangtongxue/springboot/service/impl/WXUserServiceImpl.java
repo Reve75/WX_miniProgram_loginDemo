@@ -19,7 +19,7 @@ public class WXUserServiceImpl extends ServiceImpl<WXUserMapper, WXUser> impleme
     }
 
     @Override
-    public boolean selectOpenId(String openid) {
+    public int selectOpenId(String openid) {
         return wxUserMapper.selectOpenId(openid);
     }
 }

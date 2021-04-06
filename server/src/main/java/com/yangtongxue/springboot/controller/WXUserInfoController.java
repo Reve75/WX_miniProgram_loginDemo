@@ -37,7 +37,7 @@ public class WXUserInfoController {
         String openid = json1.getString("openid");
         String session_key = json1.getString("session_key");
 
-        if (selectOpenid(openid)==true){
+        if (selectOpenid(openid)==1){
             System.out.println("用户已经存在，无须添加");
         }
         else{
@@ -51,8 +51,8 @@ public class WXUserInfoController {
     /*
     * 判断openId是否存在从而选择是否进行Insert
     * */
-    public boolean selectOpenid(String openid){
-        boolean count = wxUserService.selectOpenId(openid);
+    public int selectOpenid(String openid){
+        int count = wxUserService.selectOpenId(openid);
         return count;
     }
 

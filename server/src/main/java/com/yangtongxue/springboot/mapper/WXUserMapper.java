@@ -15,6 +15,6 @@ public interface WXUserMapper extends BaseMapper<WXUser> {
     void saveWXUser(WXUser wxuser);
 
     /*判断openId是否存在*/
-    @Select("select * from wx_login where openid = #{openid}")
-    boolean selectOpenId(String openid);
+    @Select("select count(1) from wx_login where openid = #{openid}")
+    int selectOpenId(String openid);
 }
