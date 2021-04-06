@@ -1,0 +1,18 @@
+<view>
+  <view class="topmajor">
+    <image src="/images/senlinziTitle.png" class="top" mode="aspectFill"></image>
+  <!------  <image bindtap="goMine" class="mine"src="/images/me.png"></image>-->
+  </view>
+
+  <!--<swiper class="swiper_img"indicator-dots="{{indicatorDots}}" indicator-color="white"autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{img_urls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide_img" mode="aspectFill"/>
+      </swiper-item>
+    </block>
+  </swiper>-->
+  <view class="list">
+    
+  </view>
+
+</view>

@@ -1,0 +1,10 @@
+<!--pages/list/list.wxml-->
+<view>
+ <!-----left_directory-----> 
+  <view class="left_directory">
+    <view wx:for="{{listData}}" wx:key="list" class="{{index==activeIndex?'lef_directory_box_select':'left_directory_box_unselect'}}"data-index="{{index}}"  bindtap="selectMenu">
+      <view class="list_directory">{{item.name}}</view>
+    </view>
+
+  </view>
+</view>
