@@ -1,5 +1,7 @@
 #Login Demo Document
 
+####框架:微信小程序前端+springboot(druid+mybatis-plus+fastjson)+mysql
+
 ####思路：获取小程序前端的code以及userInfo发送到服务器后台，服务器对数据进行解析判断是否需要插入到数据库
 
 ####注意：微信小程序getUserInfo有所变动，现在getUserInfo获取到的数据为匿名信息，需该用getUserProfile
